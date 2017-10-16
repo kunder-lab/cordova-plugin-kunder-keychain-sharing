@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-kunder-keychain-sharing" version="1.0.0">
+    <name>KeychainPlugin</name>
+    <description>Keychain cordova plugin for iOS</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,,ios,plugin, keychain</keywords>
+
+    <js-module src="www/Keychain.js" name="Keychain">
+        <clobbers target="window.Keychain" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="KeychainPlugin">
+                <param name="ios-package" value="KeychainPlugin"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/KeychainWrapper.h" />
+        <source-file src="src/ios/KeychainWrapper.m" />
+        <header-file src="src/ios/KeychainPlugin.h" />
+        <source-file src="src/ios/KeychainPlugin.m" />
+        
+        <framework src="Security.framework" />
+        <framework src="Foundation.framework"/>
+        <framework src="LocalAuthentication.framework"/>
+    </platform>
+</plugin>
