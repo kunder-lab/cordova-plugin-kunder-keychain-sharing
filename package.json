@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-kunder-keychain-sharing",
+  "version": "1.0.0",
+  "description": "Keychain cordova plugin for iOS",
+  "cordova": {
+    "id": "cordova-plugin-kunder-keychain-sharing",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunder-lab/cordova-plugin-kunder-keychain-sharing.git"
+  },
+  "keywords": [
+    "cordova",
+    "ios",
+    "plugin",
+    "keychain",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Kunder",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/kunder-lab/cordova-plugin-kunder-keychain-sharing/issues"
+  },
+  "homepage": "https://github.com/kunder-lab/cordova-plugin-kunder-keychain-sharing#readme"
+}
